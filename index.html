@@ -10,6 +10,15 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/52d2b40c3f.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
     <title>Sokoline PLP Page</title>
 </head>
 <body class="plp-list-view-container">
@@ -146,9 +155,9 @@
                             </div>
                             <div class="filter-bottom">
                                 <p class="heading">Filter By:</p>
-                                <ul class="filter-options">
-                                    <li>
-                                        <div class="types-hover flex">
+                                <ul class="filter-options" id="accordion" >
+                                    <li class="option" >
+                                        <div class="types-hover flex" >
                                             <span>TYPE</span>
                                             <span class="material-symbols-rounded">expand_more</span>
                                         </div>
