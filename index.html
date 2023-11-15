@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
     <script src="https://kit.fontawesome.com/52d2b40c3f.js" crossorigin="anonymous"></script>
     <title>Sokoline PLP Page</title>
 </head>
-
 <body class="plp-list-view-container">
     <header class="header">
         <div class="top-banner">
@@ -96,74 +94,726 @@
                         ullamcorper
                         sit amet euismod vel, condimentum sed urna. Duis ultricies nulla ac augue posuere, et lobortis
                         quam gravida. Aliquam sit amet ipsum cursus, suscipit ipsum eu, scelerisque sem. Phasellus
-                        malesuada euismod vehicula. Vivamus</span>… >
+                        malesuada euismod vehicula. Vivamus…</span>
+                    <span class="material-symbols-outlined">
+                        navigate_next
+                    </span>
                     <a href="#"> Read More</a>
                 </section>
-                <section class="list-filter-sec flex">
-                    <div class="filter-container">
-                        <div class="filter-top">
-                            <div class="price-indicatore flex">
-                                <span class="lowest-price">$30</span>
-                                <span class="highest-price">$400</span>
-                            </div>
-                            <input type="range" class="price-filter-bar">
-                        </div>
-                        <div class="filter-bottom">
-                            <p class="heading">Filter By:</p>
-                            <ul class="filter-options">
+                <section class="listing-filter-sec flex">
+                    <div class="filter-sec">
+                        <div class="now-shopping-sec">
+                            <h4 class="title">Now Shopping</h4>
+                            <ul>
                                 <li class="flex">
-                                    <span>TYPE</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
+                                    <div class="shopping-info">
+                                        <span class="by-title">Country:</span>
+                                        <span class="value">Australia</span>
+                                    </div>
+                                    <div class="clear-btn">
+                                        <a href="#">X</a>
+                                    </div>
                                 </li>
                                 <li class="flex">
-                                    <span>COUNTRY</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
+                                    <div class="shopping-info">
+                                        <span class="by-title">Availability:</span>
+                                        <span class="value">In Stock</span>
+                                    </div>
+                                    <div class="clear-btn">
+                                        <a href="#">X</a>
+                                    </div>
                                 </li>
-                                <li class="flex">
-                                    <span>REGION</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>PRODUCER</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>AVAILABILITY</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>COLOR</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>FORMAT</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>RATING</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>TYPE OF WINE</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>VARIETAL</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
-                                </li>
-                                <li class="flex">
-                                    <span>OWC</span>
-                                    <span class="material-symbols-rounded">expand_more</span>
+                                <li class="clearAll-btn">
+                                    <a href="#">Clear All</a>
                                 </li>
                             </ul>
                         </div>
+                        <div class="show-filter-btn-tab">
+                            <div class="flex">
+                                <span>SHOW FILTERS</span>
+                                <span class="material-symbols-rounded">
+                                    add
+                                </span>
+                            </div>
+                        </div>
+                        <div class="filter-container">
+                            <div class="filter-top">
+                                <div class="price-indicatore flex">
+                                    <span class="lowest-price">$30</span>
+                                    <span class="highest-price">$400</span>
+                                </div>
+                                <input type="range" class="price-filter-bar">
+                            </div>
+                            <div class="filter-bottom">
+                                <p class="heading">Filter By:</p>
+                                <ul class="filter-options">
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>TYPE</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>type1</li>
+                                            <li>type1</li>
+                                            <li>type1</li>
+                                            <li>type1</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>COUNTRY</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>COUNTRY</li>
+                                            <li>COUNTRY</li>
+                                            <li>COUNTRY</li>
+                                            <li>COUNTRY</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>REGION</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>REGION</li>
+                                            <li>REGION</li>
+                                            <li>REGION</li>
+                                            <li>REGION</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>PRODUCER</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>PRODUCER</li>
+                                            <li>PRODUCER</li>
+                                            <li>PRODUCER</li>
+                                            <li>PRODUCER</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>AVAILABILITY</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>AVAILABILITY</li>
+                                            <li>AVAILABILITY</li>
+                                            <li>AVAILABILITY</li>
+                                            <li>AVAILABILITY</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>COLOR</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>COLOR</li>
+                                            <li>COLOR</li>
+                                            <li>COLOR</li>
+                                            <li>COLOR</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>FORMAT</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>FORMAT</li>
+                                            <li>FORMAT</li>
+                                            <li>FORMAT</li>
+                                            <li>FORMAT</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>RATING</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>RATING</li>
+                                            <li>RATING</li>
+                                            <li>RATING</li>
+                                            <li>RATING</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>TYPE OF WINE</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>TYPE OF WINE</li>
+                                            <li>TYPE OF WINE</li>
+                                            <li>TYPE OF WINE</li>
+                                            <li>TYPE OF WINE</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>VARIETAL</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="types hide-list">
+                                            <li>VARIETAL</li>
+                                            <li>VARIETAL</li>
+                                            <li>VARIETAL</li>
+                                            <li>VARIETAL</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="types-hover flex">
+                                            <span>OWC</span>
+                                            <span class="material-symbols-rounded">expand_more</span>
+                                        </div>
+                                        <ul class="hide-list">
+                                            <li>OWC</li>
+                                            <li>OWC</li>
+                                            <li>OWC</li>
+                                            <li>OWC</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="products-listing"></div>
+                    <div class="products-listing-container">
+                        <div class="tools-section flex">
+                            <div class="left-side flex">
+                                <label>Sort:</label>
+                                <select name="" id="">
+                                    <option value="product-name">Product name</option>
+                                    <option value="product-name">Product name</option>
+                                    <option value="product-name">Product name</option>
+                                </select>
+                                <a href="#" class="uparrow">
+                                    <img src="Images/main/Up-arrow.png" alt="up arrow">
+                                </a>
+                            </div>
+                            <div class="right-side flex">
+                                <div class="view-type">
+                                    <span class="material-symbols-outlined  grid-view-btn view-btn" data-id="grid-view">
+                                        grid_view
+                                    </span>
+                                    <span class="material-symbols-sharp list-view-btn view-btn active" data-id="list-view">
+                                        view_list
+                                    </span>
+                                </div>
+                                <div class="show-count">
+                                    <label for="show-count">Show:</label>
+                                    <select name="" id="">
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" products-list-view products-view active" id="list-view">
+                            <div class="product item-1 flex">
+                                <div class="offer-label">
+                                    <img src="Images/main/product-images/hot-light-orange-label.png" alt="hot label">
+                                </div>
+                                <div class="prod-image">
+                                    <img src="Images/main/product-images/2019.png" alt="2019 Domaine jasmine">
+                                </div>
+                                <div class="prod-other-details ">
+                                    <div class="top flex">
+                                        <div class="name-desc">
+                                            <h1>2019 Domaine Jessiaume Beaune 1Er Cru Les Cent Vignes</h1>
+                                            <span class="product-desc">The domaine owns just over 1ha in Beaune Premier
+                                                Cru Cent Vignes, with
+                                                a
+                                                mid-slope position. The fruit is destemmed and fermented on native
+                                                yeasts,
+                                                prior to ageing in cask (25% new…”
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                navigate_next
+                                            </span>
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                        <div class="favourite">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom flex">
+                                        <div class="left flex">
+                                            <div class="number">
+                                                <h2>93</h2>
+                                            </div>
+                                            <div class="month">
+                                                <h2>DEC</h2>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price">As low as<strong>$49.99</strong> </span>
+                                            <a href="#" class="view-opt-btn">VIEW OPTIONS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product item-2 flex">
+                                <div class="prod-image">
+                                    <img src="Images/main/product-images/2016 rudda.png" alt="2016 ridda">
+                                </div>
+                                <div class="prod-other-details ">
+                                    <div class="top flex">
+                                        <div class="name-desc">
+                                            <h1>2016 Rudd Estate Samantha’s Cabernet Sauvignon</h1>
+                                            <span class="product-desc">The 2016 Cabernet Sauvignon Samantha’s is made of
+                                                100% Cabernet
+                                                Sauvignon aged for 21 months in 86% new French oak. This is a vineyard
+                                                selection blend usually harvested slightly la…”
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                navigate_next
+                                            </span>
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                        <div class="favourite">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom flex">
+                                        <div class="left flex">
+                                            <div class="number">
+                                                <h2>97+</h2>
+                                            </div>
+                                            <div class="month">
+                                                <h2>RP</h2>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price">As low as<strong>$169.99</strong> </span>
+                                            <a href="#" class="view-opt-btn">VIEW OPTIONS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product item-3 flex">
+                                <div class="offer-label">
+                                    <img src="Images/main/product-images/new-blue-label.png" alt="new label">
+                                </div>
+                                <div class="prod-image">
+                                    <img src="Images/main/product-images/2018-chateau sergant.png" alt="2018">
+                                </div>
+                                <div class="prod-other-details ">
+                                    <div class="top flex">
+                                        <div class="name-desc">
+                                            <h1>2018 Chateau Sergant</h1>
+                                            <span class="product-desc">The 2018 Chateau Sergant is made of Lorem ipsum
+                                                dolor sit amet,
+                                                consectetur adipiscing elit. Fusce efficitur libero vel metus volutpat
+                                                tristique at vel massa. Morbi nec urna velit. Vivamus.…”
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                navigate_next
+                                            </span>
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                        <div class="favourite">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom flex">
+                                        <div class="left flex">
+                                            <div class="number">
+                                                <h2>93</h2>
+                                            </div>
+                                            <div class="month">
+                                                <h2>VM</h2>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price">As low as<strong>$23.95</strong> </span>
+                                            <a href="#" class="view-opt-btn">VIEW OPTIONS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product item-4 flex">
+                                <div class="offer-label">
+                                    <img src="Images/main/product-images/sale-new-label.png" alt="sale label">
+                                </div>
+                                <div class="prod-image">
+                                    <img src="Images/main/product-images/1946-toro-albala-don.png" alt="1946">
+                                </div>
+                                <div class="prod-other-details ">
+                                    <div class="top flex">
+                                        <div class="name-desc">
+                                            <h1>1946 Toro Albala Don PX Convento Seleccion</h1>
+                                            <span class="product-desc">The 1946 Don PX Convento Seleccion produced with
+                                                Pedro Ximenez grapes
+                                                dehydrated under the sun at the time of the Second World War, was only
+                                                bottled in September 2011. This is an e…”
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                navigate_next
+                                            </span>
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                        <div class="favourite">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom flex">
+                                        <div class="left flex">
+                                            <div class="number">
+                                                <h2>100</h2>
+                                            </div>
+                                            <div class="month">
+                                                <h2>RP</h2>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price">As low as<strong>$350.00</strong> </span>
+                                            <a href="#" class="view-opt-btn">VIEW OPTIONS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product item-5 flex">
+                                <div class="prod-image">
+                                    <img src="Images/main/product-images/2018-Alain.png" alt="2018-Alain">
+                                </div>
+                                <div class="prod-other-details ">
+                                    <div class="top flex">
+                                        <div class="name-desc">
+                                            <h1>2018 Alain Hudelot Noellat Nuit Saint Georges Murgers</h1>
+                                            <span class="product-desc">(Nuits St. Georges “Murgers”- Domaine
+                                                Hudelot-Noëllat) Though the 2018
+                                                Murgers here is 13.8 percent octane, it is a very pure and plummy wine
+                                                and is not particular…”
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                navigate_next
+                                            </span>
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                        <div class="favourite">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom flex">
+                                        <div class="left flex">
+                                            <div class="number">
+                                                <h2>91+</h2>
+                                            </div>
+                                            <div class="month">
+                                                <h2>JG</h2>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price">As low as<strong>$139.00</strong> </span>
+                                            <a href="#" class="view-opt-btn">VIEW OPTIONS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product item-6 flex">
+                                <div class="prod-image">
+                                    <img src="Images/main/product-images/1982 La Mission.png" alt="1982 la mission">
+                                </div>
+                                <div class="prod-other-details ">
+                                    <div class="top flex">
+                                        <div class="name-desc">
+                                            <h1>1982 La Mission Haut Brion</h1>
+                                            <span class="product-desc">A monumental wine, this historic La
+                                                Mission-Haut-Brion was the last
+                                                vintage made by the descendants of the Woltner family, who had owned
+                                                this estate for decades prior to selling it…”
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                navigate_next
+                                            </span>
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                        <div class="favourite">
+                                            <span class="material-symbols-outlined">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom flex">
+                                        <div class="left flex">
+                                            <div class="number">
+                                                <h2>100</h2>
+                                            </div>
+                                            <div class="month">
+                                                <h2>RP</h2>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price">As low as<strong>$2,395.00</strong> </span>
+                                            <a href="#" class="view-opt-btn">VIEW OPTIONS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-container products-view" id="grid-view">
+                            <div class="products-grid-view">
+                                <div class="product item-1">
+                                    <div class="offer-label">
+                                        <img src="Images/main/product-images/hot-light-orange-label.png" alt="hot label">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/2019 Domaine Louise.png" alt="2019 domaine">
+                                    </div>
+                                    <h1 class="prod-name">2019 Domaine Jessiaume Beaune 1Er Cru Les Cent Vignes</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>100</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>DEC</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$2,395.00</strong> </span>
+                                </div>
+                                <div class="product item-2">
+                                    <div class="offer-label">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/2016 rudda.png" alt="2016 rudda">
+                                    </div>
+                                    <h1 class="prod-name">2016 Rudd Estate Samantha’s Cabernet Sauvignon</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>97+</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>RP</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$169.99</strong></span>
+                                </div>
+                                <div class="product item-3">
+                                    <div class="offer-label">
+                                        <img src="Images/main/product-images/new-blue-label.png" alt="new label">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/2018-chateau sergant.png" alt="2018 Chateau">
+                                    </div>
+                                    <h1 class="prod-name">2018 Chateau Sergant</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>93</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>VM</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$23.95</strong> </span>
+                                </div>
+                                <div class="product item-4">
+                                    <div class="offer-label">
+                                        <img src="Images/main/product-images/sale-new-label.png" alt="sale label">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/1946-toro-albala-don.png" alt="1946 toro">
+                                    </div>
+                                    <h1 class="prod-name">1946 Toro Albala Don PX Convento Seleccion</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>100</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>RP</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$350.00</strong> </span>
+                                </div>
+                                <div class="product item-5">
+                                    <div class="offer-label">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/2018-Alain.png" alt="2018 Alain">
+                                    </div>
+                                    <h1 class="prod-name">2018 Alain Hudelot Noellat Nuit Saint Georges Murgers</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>91+</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>JG</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$139.00</strong> </span>
+                                </div>
+                                <div class="product item-6">
+                                    <div class="offer-label">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/1982 La Mission.png" alt="1982 la martin">
+                                    </div>
+                                    <h1 class="prod-name">1982 La Mission Haut Brion</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>100</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>RP</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$2,395.00</strong> </span>
+                                </div>
+                                <div class="product item-7">
+                                    <div class="offer-label">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/2019 Domaine Louise.png" alt="2019 Domaine">
+                                    </div>
+                                    <h1 class="prod-name">2019 Domaine Louis Michel & Fils Chablis Grand Cru Vaudesir</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>94</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>RP</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$79.99</strong> </span>
+                                </div>
+                                <div class="product item-8">
+                                    <div class="offer-label">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/1961 Calon Segur.png" alt="1961 calon segur">
+                                    </div>
+                                    <h1 class="prod-name">1961 Calon Segur</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>96</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>JG</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$849.00</strong> </span>
+                                </div>
+                                <div class="product item-9">
+                                    <div class="offer-label">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="favourite">
+                                        <span class="material-symbols-outlined">
+                                            favorite
+                                        </span>
+                                    </div>
+                                    <div class="prod-img">
+                                        <img src="Images/main/product-images/2018-chateau sergant.png" alt="2018 Chateau">
+                                    </div>
+                                    <h1 class="prod-name">2018 Chateau Sergant</h1>
+                                    <div class="wine-age flex">
+                                        <div class="number">
+                                            <h2>93</h2>
+                                        </div>
+                                        <div class="month">
+                                            <h2>VM</h2>
+                                        </div>
+                                    </div>
+                                    <span class="price">As low as<strong>$23.95</strong> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-sec">
+                            <div class="paginat-container">
+                                <ul class="flex">
+                                    <li class="page no-1 active"><a href="">1</a></li>
+                                    <li class="page no-2"><a href="">2</a></li>
+                                    <li class="page no-3"><a href="">3</a></li>
+                                    <li class="page no-4"><a href="">4</a></li>
+                                    <li class="nxt-btn flex">
+                                        <a href="">
+                                            <span class="material-symbols-outlined">
+                                                navigate_next
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
         <div class="body-footer">
-
+            <div class="body-foot-container flex">
+                <div class="contact-us-img">
+                    <img src="Images/footer/textMe.png" alt="contact us image">
+                </div>
+                <div class="txt-content">
+                    <h1>Need help finding the right wine?</h1>
+                    <p>your dedicated wine specialist can consult with you on buying, managing your collection,
+                        investing in wine, entertaining and more.</p>
+                </div>
+                <div class="try-concierge-btn">
+                    <a href="#">TRY OUR WINE CONCIERGE</a>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -244,6 +894,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
-
 </html>
