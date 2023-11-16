@@ -4,11 +4,6 @@ document.querySelector('.show-filter-btn-tab').addEventListener("click",()=>{
 
 })
 
-// window.addEventListener('DOMContentLoaded', ()=>{
-//     document.querySelector('.list-view-btn').classList.add('active');
-//     document.querySelector('.products-list-view').classList.add('show')
-// })
-
 const btns=document.querySelectorAll('.view-btn')
 const productContainer = document.querySelectorAll('.products-view');
 const mainContainer = document.querySelector('.products-listing-container')
