@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,20 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <script src="https://kit.fontawesome.com/52d2b40c3f.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
-  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
-  </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
     <title>Sokoline PLP Page</title>
 </head>
+
 <body class="plp-list-view-container">
     <header class="header">
         <div class="top-banner">
@@ -44,7 +47,7 @@
         <div class="bottom">
             <div class="container flex">
                 <div class="hamburg-icon">
-                    <span class="material-symbols-rounded">
+                    <span class="material-symbols-rounded burger-btn">
                         sort
                     </span>
                 </div>
@@ -58,6 +61,7 @@
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 </form>
                 <nav class="nav-links flex">
+
                     <a href="#" class="shop-wine flex">Shop Wine
                         <span class="material-symbols-rounded">
                             expand_more
@@ -65,6 +69,8 @@
                     </a>
                     <a href="#" class="new-arrival">New Arrivals</a>
                     <a href="#" class="sell-your-wine">Sell Your Wine</a>
+                    <a href="#" class="contact">Contact</a>
+                    <a href="#" class="about">About</a>
                 </nav>
                 <div class="profile-cart flex">
                     <a href="#" class="profile-icon">
@@ -140,7 +146,7 @@
                         <div class="show-filter-btn-tab">
                             <div class="flex">
                                 <span>SHOW FILTERS</span>
-                                <span class="material-symbols-rounded">
+                                <span class="material-symbols-rounded add-icon">
                                     add
                                 </span>
                             </div>
@@ -155,9 +161,9 @@
                             </div>
                             <div class="filter-bottom">
                                 <p class="heading">Filter By:</p>
-                                <ul class="filter-options" id="accordion" >
-                                    <li class="option" >
-                                        <div class="types-hover flex" >
+                                <ul class="filter-options" id="accordion">
+                                    <li class="option">
+                                        <div class="types-hover flex">
                                             <span>TYPE</span>
                                             <span class="material-symbols-rounded">expand_more</span>
                                         </div>
@@ -301,16 +307,20 @@
                                     <option value="product-name">Product name</option>
                                     <option value="product-name">Product name</option>
                                 </select>
-                                <a href="#" class="uparrow">
+                                <span class="material-symbols-rounded">
+                                    expand_more
+                                </span>
+                                <div class="uparrow">
                                     <img src="Images/main/Up-arrow.png" alt="up arrow">
-                                </a>
+                                </div>
                             </div>
                             <div class="right-side flex">
                                 <div class="view-type">
-                                    <span class="material-symbols-outlined  grid-view-btn view-btn" data-id="grid-view">
+                                    <span class="material-symbols-sharp  grid-view-btn view-btn" data-id="grid-view">
                                         grid_view
                                     </span>
-                                    <span class="material-symbols-sharp list-view-btn view-btn active" data-id="list-view">
+                                    <span class="material-symbols-sharp list-view-btn view-btn active"
+                                        data-id="list-view">
                                         view_list
                                     </span>
                                 </div>
@@ -321,6 +331,9 @@
                                         <option value="50">50</option>
                                         <option value="100">100</option>
                                     </select>
+                                    <span class="material-symbols-rounded">
+                                        expand_more
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -336,20 +349,22 @@
                                     <div class="top flex">
                                         <div class="name-desc">
                                             <h1>2019 Domaine Jessiaume Beaune 1Er Cru Les Cent Vignes</h1>
-                                            <span class="product-desc">The domaine owns just over 1ha in Beaune Premier
-                                                Cru Cent Vignes, with
-                                                a
-                                                mid-slope position. The fruit is destemmed and fermented on native
-                                                yeasts,
-                                                prior to ageing in cask (25% new…”
-                                            </span>
-                                            <span class="material-symbols-outlined">
-                                                navigate_next
-                                            </span>
-                                            <a href="#">Learn More</a>
+                                            <p class="product-desc">
+                                                <span>The domaine owns just over 1ha in Beaune Premier
+                                                    Cru Cent Vignes, with
+                                                    a
+                                                    mid-slope position. The fruit is destemmed and fermented on native
+                                                    yeasts,
+                                                    prior to ageing in cask (25% new…”
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    navigate_next
+                                                </span>
+                                                <a href="#">Learn More</a>
+                                            </p>
                                         </div>
                                         <div class="favourite">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-sharp fav-btn">
                                                 favorite
                                             </span>
                                         </div>
@@ -378,18 +393,22 @@
                                     <div class="top flex">
                                         <div class="name-desc">
                                             <h1>2016 Rudd Estate Samantha’s Cabernet Sauvignon</h1>
-                                            <span class="product-desc">The 2016 Cabernet Sauvignon Samantha’s is made of
-                                                100% Cabernet
-                                                Sauvignon aged for 21 months in 86% new French oak. This is a vineyard
-                                                selection blend usually harvested slightly la…”
-                                            </span>
-                                            <span class="material-symbols-outlined">
-                                                navigate_next
-                                            </span>
-                                            <a href="#">Learn More</a>
+                                            <p class="product-desc">
+                                                <span>The 2016 Cabernet Sauvignon Samantha’s is made of
+                                                    100% Cabernet
+                                                    Sauvignon aged for 21 months in 86% new French oak. This is a
+                                                    vineyard
+                                                    selection blend usually harvested slightly la…”
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    navigate_next
+                                                </span>
+                                                <a href="#">Learn More</a>
+                                            </p>
+
                                         </div>
                                         <div class="favourite">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-sharp fav-btn">
                                                 favorite
                                             </span>
                                         </div>
@@ -421,18 +440,22 @@
                                     <div class="top flex">
                                         <div class="name-desc">
                                             <h1>2018 Chateau Sergant</h1>
-                                            <span class="product-desc">The 2018 Chateau Sergant is made of Lorem ipsum
-                                                dolor sit amet,
-                                                consectetur adipiscing elit. Fusce efficitur libero vel metus volutpat
-                                                tristique at vel massa. Morbi nec urna velit. Vivamus.…”
-                                            </span>
-                                            <span class="material-symbols-outlined">
-                                                navigate_next
-                                            </span>
-                                            <a href="#">Learn More</a>
+                                            <p class="product-desc">
+                                                <span>The 2018 Chateau Sergant is made of Lorem ipsum
+                                                    dolor sit amet,
+                                                    consectetur adipiscing elit. Fusce efficitur libero vel metus
+                                                    volutpat
+                                                    tristique at vel massa. Morbi nec urna velit. Vivamus.…”
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    navigate_next
+                                                </span>
+                                                <a href="#">Learn More</a>
+                                            </p>
+
                                         </div>
                                         <div class="favourite">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-sharp fav-btn">
                                                 favorite
                                             </span>
                                         </div>
@@ -464,18 +487,21 @@
                                     <div class="top flex">
                                         <div class="name-desc">
                                             <h1>1946 Toro Albala Don PX Convento Seleccion</h1>
-                                            <span class="product-desc">The 1946 Don PX Convento Seleccion produced with
-                                                Pedro Ximenez grapes
-                                                dehydrated under the sun at the time of the Second World War, was only
-                                                bottled in September 2011. This is an e…”
-                                            </span>
-                                            <span class="material-symbols-outlined">
-                                                navigate_next
-                                            </span>
-                                            <a href="#">Learn More</a>
+                                            <p class="product-desc">
+                                                <span>The 1946 Don PX Convento Seleccion produced with
+                                                    Pedro Ximenez grapes
+                                                    dehydrated under the sun at the time of the Second World War, was
+                                                    only
+                                                    bottled in September 2011. This is an e…”
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    navigate_next
+                                                </span>
+                                                <a href="#">Learn More</a>
+                                            </p>
                                         </div>
                                         <div class="favourite">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-sharp fav-btn">
                                                 favorite
                                             </span>
                                         </div>
@@ -504,18 +530,22 @@
                                     <div class="top flex">
                                         <div class="name-desc">
                                             <h1>2018 Alain Hudelot Noellat Nuit Saint Georges Murgers</h1>
-                                            <span class="product-desc">(Nuits St. Georges “Murgers”- Domaine
-                                                Hudelot-Noëllat) Though the 2018
-                                                Murgers here is 13.8 percent octane, it is a very pure and plummy wine
-                                                and is not particular…”
-                                            </span>
-                                            <span class="material-symbols-outlined">
-                                                navigate_next
-                                            </span>
-                                            <a href="#">Learn More</a>
+                                            <p class="product-desc">
+                                                <span>(Nuits St. Georges “Murgers”- Domaine
+                                                    Hudelot-Noëllat) Though the 2018
+                                                    Murgers here is 13.8 percent octane, it is a very pure and plummy
+                                                    wine
+                                                    and is not particular…”
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    navigate_next
+                                                </span>
+                                                <a href="#">Learn More</a>
+                                            </p>
+
                                         </div>
                                         <div class="favourite">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-sharp fav-btn">
                                                 favorite
                                             </span>
                                         </div>
@@ -544,18 +574,21 @@
                                     <div class="top flex">
                                         <div class="name-desc">
                                             <h1>1982 La Mission Haut Brion</h1>
-                                            <span class="product-desc">A monumental wine, this historic La
-                                                Mission-Haut-Brion was the last
-                                                vintage made by the descendants of the Woltner family, who had owned
-                                                this estate for decades prior to selling it…”
-                                            </span>
-                                            <span class="material-symbols-outlined">
-                                                navigate_next
-                                            </span>
-                                            <a href="#">Learn More</a>
+                                            <p class="product-desc">
+                                                <span>A monumental wine, this historic La
+                                                    Mission-Haut-Brion was the last
+                                                    vintage made by the descendants of the Woltner family, who had owned
+                                                    this estate for decades prior to selling it…”
+                                                </span>
+                                                <span class="material-symbols-outlined">
+                                                    navigate_next
+                                                </span>
+                                                <a href="#">Learn More</a>
+                                            </p>
+
                                         </div>
                                         <div class="favourite">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-sharp fav-btn">
                                                 favorite
                                             </span>
                                         </div>
@@ -581,15 +614,17 @@
                             <div class="products-grid-view">
                                 <div class="product item-1">
                                     <div class="offer-label">
-                                        <img src="Images/main/product-images/hot-light-orange-label.png" alt="hot label">
+                                        <img src="Images/main/product-images/hot-light-orange-label.png"
+                                            alt="hot label">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
                                     <div class="prod-img">
-                                        <img src="Images/main/product-images/2019 Domaine Louise.png" alt="2019 domaine">
+                                        <img src="Images/main/product-images/2019 Domaine Louise.png"
+                                            alt="2019 domaine">
                                     </div>
                                     <h1 class="prod-name">2019 Domaine Jessiaume Beaune 1Er Cru Les Cent Vignes</h1>
                                     <div class="wine-age flex">
@@ -607,7 +642,7 @@
                                         <img src="" alt="">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
@@ -630,12 +665,13 @@
                                         <img src="Images/main/product-images/new-blue-label.png" alt="new label">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
                                     <div class="prod-img">
-                                        <img src="Images/main/product-images/2018-chateau sergant.png" alt="2018 Chateau">
+                                        <img src="Images/main/product-images/2018-chateau sergant.png"
+                                            alt="2018 Chateau">
                                     </div>
                                     <h1 class="prod-name">2018 Chateau Sergant</h1>
                                     <div class="wine-age flex">
@@ -653,7 +689,7 @@
                                         <img src="Images/main/product-images/sale-new-label.png" alt="sale label">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
@@ -676,7 +712,7 @@
                                         <img src="" alt="">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
@@ -699,7 +735,7 @@
                                         <img src="" alt="">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
@@ -722,14 +758,16 @@
                                         <img src="" alt="">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
                                     <div class="prod-img">
-                                        <img src="Images/main/product-images/2019 Domaine Louise.png" alt="2019 Domaine">
+                                        <img src="Images/main/product-images/2019 Domaine Louise.png"
+                                            alt="2019 Domaine">
                                     </div>
-                                    <h1 class="prod-name">2019 Domaine Louis Michel & Fils Chablis Grand Cru Vaudesir</h1>
+                                    <h1 class="prod-name">2019 Domaine Louis Michel & Fils Chablis Grand Cru Vaudesir
+                                    </h1>
                                     <div class="wine-age flex">
                                         <div class="number">
                                             <h2>94</h2>
@@ -745,12 +783,13 @@
                                         <img src="" alt="">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
                                     <div class="prod-img">
-                                        <img src="Images/main/product-images/1961 Calon Segur.png" alt="1961 calon segur">
+                                        <img src="Images/main/product-images/1961 Calon Segur.png"
+                                            alt="1961 calon segur">
                                     </div>
                                     <h1 class="prod-name">1961 Calon Segur</h1>
                                     <div class="wine-age flex">
@@ -768,12 +807,13 @@
                                         <img src="" alt="">
                                     </div>
                                     <div class="favourite">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-sharp fav-btn">
                                             favorite
                                         </span>
                                     </div>
                                     <div class="prod-img">
-                                        <img src="Images/main/product-images/2018-chateau sergant.png" alt="2018 Chateau">
+                                        <img src="Images/main/product-images/2018-chateau sergant.png"
+                                            alt="2018 Chateau">
                                     </div>
                                     <h1 class="prod-name">2018 Chateau Sergant</h1>
                                     <div class="wine-age flex">
@@ -791,11 +831,18 @@
                         <div class="pagination-sec">
                             <div class="paginat-container">
                                 <ul class="flex">
+                                    <li class="prev-btn">
+                                        <a href="">
+                                            <span class="material-symbols-outlined">
+                                                navigate_before
+                                            </span>
+                                        </a>
+                                    </li>
                                     <li class="page no-1 active"><a href="">1</a></li>
                                     <li class="page no-2"><a href="">2</a></li>
                                     <li class="page no-3"><a href="">3</a></li>
                                     <li class="page no-4"><a href="">4</a></li>
-                                    <li class="nxt-btn flex">
+                                    <li class="nxt-btn">
                                         <a href="">
                                             <span class="material-symbols-outlined">
                                                 navigate_next
@@ -905,4 +952,5 @@
     </footer>
     <script src="index.js"></script>
 </body>
+
 </html>

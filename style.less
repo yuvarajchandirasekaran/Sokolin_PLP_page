@@ -40,6 +40,7 @@ li {
     list-style: none;
 }
 
+
 .background.properties {
     background-position: center;
     background-size: cover;
@@ -52,18 +53,30 @@ li {
     color: var(--primary-black);
 }
 
-.material-symbols-rounded-props {
-    font-family: Material Symbols Rounded;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 24px;
-    color: var(--primary-white);
-}
-
 .container {
-    max-width: 1308px;
+    max-width: 1240px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width:1279px) {
+        max-width: 974px;
+    }
+
+    @media screen and (max-width:1023px) {
+        max-width: 706px;
+    }
+
+    @media screen and (max-width:767px) {
+        max-width: 600px;
+    }
+
+    @media screen and (max-width:630px) {
+        max-width: 425px;
+    }
+
+    @media screen and (max-width:460px) {
+        max-width: 335px;
+    }
 }
 
 body {
@@ -75,6 +88,7 @@ body {
     .header {
         .top-banner {
             background-color: var(--primary-red);
+
             .container {
                 padding-top: 7px;
                 padding-bottom: 7px;
@@ -127,6 +141,8 @@ body {
 
         .bottom {
             background-color: var(--primary-white);
+            position: relative;
+
             .container {
                 padding-top: 20px;
                 padding-bottom: 12px;
@@ -208,7 +224,18 @@ body {
                     }
 
                     @media screen and (max-width:1023px) {
+
                         display: none;
+
+                    }
+
+                    .contact,
+                    .about {
+                        display: none;
+
+                        @media screen and (max-width:1023px) {
+                            display: block;
+                        }
                     }
 
                     a {
@@ -216,6 +243,11 @@ body {
 
                         .material-symbols-rounded {
                             color: var(--primary-red);
+                        }
+
+                        @media screen and (max-width: 1023px) {
+                            font: normal 22px/29px var(--pt-serif);
+                            padding: 10px 0;
                         }
                     }
 
@@ -226,6 +258,11 @@ body {
                         .material-symbols-rounded {
                             margin-left: 5px;
                         }
+
+                        @media screen and (max-width: 1023px) {
+                            font: normal 28px/29px var(--pt-serif);
+
+                        }
                     }
 
                     .new-arrival {
@@ -235,6 +272,23 @@ body {
                             margin: 0px 20px;
                         }
                     }
+
+                }
+
+                .nav-links.flex.show {
+                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    justify-content: unset;
+                    position: absolute;
+                    width: 100%;
+                    background-color: var(--primary-white);
+                    z-index: 999;
+                    top: 57px;
+                    right: 0;
+                    height: 47vh;
+                    overflow: auto;
                 }
 
                 .profile-cart {
@@ -274,6 +328,7 @@ body {
         .banner-sec {
             background-image: url(images/banner/banner-image.png);
             .background.properties;
+
             .container {
                 .top {
                     padding-top: 1.25rem;
@@ -333,21 +388,32 @@ body {
 
                 @media screen and (max-width: 1279px) {
                     padding: 25px 0 60px;
+                    max-width: 974px;
                 }
 
                 @media screen and (max-width: 1023px) {
-                    padding: 25px 0 60px;
+                    max-width: 654px;
                 }
 
                 @media screen and (max-width: 767px) {
-                    padding: 25px 0 60px;
+                    max-width: 600px;
+                }
+
+                @media screen and (max-width:630px) {
+                    max-width: 425px;
+                }
+
+                @media screen and (max-width:460px) {
+                    max-width: 335px;
                 }
 
                 .description-sec {
                     padding: 0px 180px 0px 60px;
 
                     @media screen and (max-width: 1279px) {
-                        padding: 0 8.1875rem 0;
+                        max-width: 840px;
+                        margin: auto;
+                        padding: 0;
                     }
 
                     @media screen and (max-width: 1023px) {
@@ -359,12 +425,13 @@ body {
                         color: var(--third-color-smoky-grey);
                         max-height: 59px;
                         overflow: hidden;
-                        display: inline-block;
+                        // display: inline-block;
                     }
 
                     span {
                         font-weight: normal;
                         font-size: medium;
+                        vertical-align: middle;
                     }
 
                     a {
@@ -460,14 +527,14 @@ body {
 
                                 span {
                                     font-size: 16px;
-                                    font-weight: bold;
+                                    font-weight: 600;
                                     font-family: var(--open-sans);
                                     color: var(--primary-white);
                                 }
 
                                 .material-symbols-rounded {
                                     font-family: 'Material Symbols Rounded';
-                                    font-size: 22px;
+                                    font-size: 23px;
                                 }
                             }
                         }
@@ -525,7 +592,11 @@ body {
                                         }
 
                                         .material-symbols-rounded {
-                                            .material-symbols-rounded-props
+                                            font-family: Material Symbols Rounded;
+                                            font-weight: 200;
+                                            font-style: normal;
+                                            font-size: 24px;
+                                            color: var(--primary-white);
                                         }
 
                                         .hide-list {
@@ -571,6 +642,14 @@ body {
                     .products-listing-container {
                         flex: 1;
 
+                        .fav-btn:hover {
+                            font-variation-settings:
+                                'FILL' 1,
+                                'wght' 400,
+                                'GRAD' 0,
+                                'opsz' 24
+                        }
+
                         @media screen and (max-width: 1023px) {
                             width: 100%;
                             margin-top: 27px;
@@ -584,10 +663,13 @@ body {
 
                             select {
                                 margin: 0px 8px;
-                                padding: 8px 15px;
+                                padding: 5px 15px;
                                 font: italic 10px/25px var(--open-sans);
                                 color: var(--primary-black);
                                 border-radius: 25px;
+                                appearance: none;
+                                width: 145px;
+                                background-image: url();
                             }
 
                             label {
@@ -601,16 +683,29 @@ body {
                             }
 
                             .left-side {
+                                position: relative;
+
                                 .uparrow {
                                     display: inline-block;
                                     max-width: 100%;
+                                    cursor: pointer;
+                                }
+
+                                span {
+                                    position: absolute;
+                                    top: 8px;
+                                    right: 30px;
                                 }
                             }
 
                             .right-side {
+                                select {
+                                    width: 70px;
+                                }
+
                                 .view-type {
+                                    display: flex;
                                     margin-right: 40px;
-                                    height: 16px;
 
                                     @media screen and (max-width:767px) {
                                         position: absolute;
@@ -620,15 +715,8 @@ body {
                                     }
 
                                     span {
+                                        margin: 0px 10px;
                                         color: #BABABA;
-                                    }
-
-                                    .material-symbols-outlined {
-                                        font-variation-settings:
-                                            'FILL' 1,
-                                            'wght' 500,
-                                            'GRAD' 0,
-                                            'opsz' 20
                                     }
 
                                     .list-view-btn {
@@ -650,6 +738,22 @@ body {
 
                                 .view-btn.active {
                                     color: var(--primary-red);
+                                    font-variation-settings:
+                                        'FILL' 1,
+                                        'wght' 400,
+                                        'GRAD' 0,
+                                        'opsz' 24
+                                }
+
+
+                                .show-count {
+                                    position: relative;
+
+                                    span {
+                                        position: absolute;
+                                        top: 8px;
+                                        right: 12px;
+                                    }
                                 }
                             }
                         }
@@ -664,7 +768,7 @@ body {
                                 border-radius: 6px;
                                 box-shadow: 0px 3px 10px #00000009;
 
-                                @media screen and (max-width:600px) {
+                                @media screen and (max-width:767px) {
                                     padding: 41px 20px 15px 15px;
                                 }
 
@@ -680,7 +784,7 @@ body {
                                     max-width: 100px;
                                     margin-right: 30px;
 
-                                    @media screen and (max-width:600px) {
+                                    @media screen and (max-width:767px) {
                                         flex-basis: 100%;
                                         margin-right: 15px;
                                     }
@@ -701,7 +805,7 @@ body {
                                                 flex-basis: 76%;
                                             }
 
-                                            @media screen and (max-width:600px) {
+                                            @media screen and (max-width:767px) {
                                                 flex-basis: 100%;
                                             }
 
@@ -709,52 +813,71 @@ body {
                                                 font: 600 16px/20px var(--open-sans);
                                                 color: var(--primary-black);
 
-                                                @media screen and (max-width:600px) {
+                                                @media screen and (max-width:767px) {
                                                     font: 600 14px/16px var(--open-sans);
                                                 }
                                             }
 
                                             .product-desc {
-                                                display: inline-block;
                                                 margin-top: 10px;
                                                 max-height: 49px;
                                                 overflow: hidden;
                                                 font: 600 12px/16px var(--open-sans);
                                                 color: var(--third-color-smoky-grey);
-                                            }
 
-                                            .material-symbols-outlined {
-                                                font-weight: normal;
-                                                font-size: medium;
-                                            }
+                                                .material-symbols-outlined {
+                                                    font-weight: normal;
+                                                    font-size: medium;
+                                                    vertical-align: middle;
+                                                }
 
-                                            a {
-                                                font: 600 12px/16px var(--open-sans);
-                                                text-decoration: underline;
-                                                color: var(--primary-black);
+                                                a {
+                                                    font: 600 12px/16px var(--open-sans);
+                                                    text-decoration: underline;
+                                                    color: var(--primary-black);
+                                                }
                                             }
                                         }
 
                                         .favourite {
                                             cursor: pointer;
 
-                                            .material-symbols-outlined {
+                                            .material-symbols-sharp {
                                                 color: var(--primary-red);
                                             }
 
-                                            @media screen and (max-width:600px) {
+                                            // .fav-btn:hover {
+                                            //     font-variation-settings:
+                                            //     'FILL' 1,
+                                            //     'wght' 400,
+                                            //     'GRAD' 0,
+                                            //     'opsz' 24
+                                            // }
+
+                                            // &:hover {
+                                            //     .material-symbols-outlined {
+                                            //         font-variation-settings:
+                                            //             'FILL' 1,
+                                            //             'wght' 500,
+                                            //             'GRAD' 0,
+                                            //             'opsz' 20
+                                            //     }
+                                            // }
+
+                                            @media screen and (max-width:767px) {
                                                 position: absolute;
                                                 top: 10px;
                                                 right: 10px;
                                             }
                                         }
+
                                     }
 
                                     .bottom {
                                         justify-content: space-between;
                                         margin-top: 48px;
 
-                                        @media screen and (max-width:600px) {
+                                        @media screen and (max-width:767px) {
                                             margin-top: 10px;
                                             flex-wrap: wrap;
                                         }
@@ -762,7 +885,7 @@ body {
                                         .left {
                                             border: 1px solid var(--third-color-smoky-grey);
 
-                                            @media screen and (max-width:600px) {
+                                            @media screen and (max-width:767px) {
                                                 margin-bottom: 10px;
                                             }
 
@@ -783,7 +906,6 @@ body {
                                             .number,
                                             .month {
                                                 height: 24px;
-                                                width: 30px;
                                             }
 
                                             h2 {
@@ -811,7 +933,7 @@ body {
                                                 border-radius: 31px;
                                                 padding: 5px 12.3px;
 
-                                                @media screen and (max-width:600px) {
+                                                @media screen and (max-width:767px) {
                                                     display: none;
                                                 }
                                             }
@@ -833,8 +955,9 @@ body {
                                     column-gap: 15px;
                                 }
 
-                                @media screen and (max-width:600px) {
+                                @media screen and (max-width:767px) {
                                     grid-template-columns: 1fr 1fr;
+
                                 }
 
                                 .product {
@@ -844,6 +967,10 @@ body {
                                     padding: 23px 14px 13px;
                                     border-radius: 6px;
                                     box-shadow: 0px 3px 10px #00000009;
+
+                                    @media screen and (max-width:767px) {
+                                        padding: 15px 7px 10px;
+                                    }
 
                                     .offer-label {
                                         max-width: 100%;
@@ -878,7 +1005,7 @@ body {
                                         font: 600 16px/20px var(--open-sans);
                                         color: var(--primary-black);
 
-                                        @media screen and (max-width: 600px) {
+                                        @media screen and (max-width: 767px) {
                                             font: 600 14px/16px var(--open-sans);
                                         }
                                     }
@@ -886,7 +1013,7 @@ body {
                                     .wine-age {
                                         margin: 10px 0px;
                                         border: 1px solid var(--third-color-smoky-grey);
-                                        width: 60px;
+                                        display: inline-flex;
 
                                         div {
                                             height: 24px;
@@ -927,7 +1054,7 @@ body {
                                             color: var(--primary-red);
                                             margin: 0px 10px 0px 6px;
 
-                                            @media screen and (max-width:600px) {
+                                            @media screen and (max-width:767px) {
                                                 font: bold 16px/16px var(--pt-serif);
                                             }
                                         }
@@ -952,38 +1079,45 @@ body {
                                     justify-content: center;
                                     border-top: 1px solid var(--primary-black);
                                     padding: 10px;
+                                    margin: 0px -3px;
 
                                     li {
                                         cursor: pointer;
+                                        height: 24px;
+                                        width: $height;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin: 0px 3px;
 
                                         a {
                                             color: var(--primary-black);
+
+                                            span {
+                                                vertical-align: middle;
+                                            }
                                         }
                                     }
 
                                     .page {
                                         font: normal 12px/20px var(--open-sans);
                                         color: var(--primary-black);
-                                        margin-right: 10px;
                                     }
 
                                     .active {
-                                        font: bold 12px/20px var(--open-sans);
+                                        // font: bold 12px/20px var(--open-sans);
                                         background-color: var(--primary-black);
                                         border-radius: 50%;
-                                        height: 20px;
-                                        width: 20px;
                                         text-align: center;
 
-                                        a {
+                                        a,
+                                        span {
                                             color: var(--primary-white);
                                         }
                                     }
 
-                                    .nxt-btn {
-                                        span {
-                                            font-size: 18px;
-                                        }
+                                    li:hover {
+                                        .active
                                     }
                                 }
                             }
@@ -1066,28 +1200,32 @@ body {
     .footer {
         background-color: var(--primary-black);
 
-        @media screen and (max-width:1023px) {
-            display: none;
-        }
-
-        @media screen and (max-width:600px) {
-            display: block;
-        }
-
         .container {
-            padding: 30px 0px;
+            padding: 30px 0;
             max-width: 1170px;
 
             @media screen and (max-width:1279px) {
-                padding: 30px 25px;
+                padding: 30px 0;
+                max-width: 974px;
             }
 
             @media screen and (max-width:1023px) {
-                padding: 40px 31px 20px;
+                padding: 40px 0 20px;
+                max-width: 629px;
             }
 
             @media screen and (max-width:767px) {
-                padding: 40px 20px 20px;
+                padding: 40px 0 20px;
+                max-width: 600px;
+            }
+
+            @media screen and (max-width:630px) {
+                padding: 40px 0 20px;
+                max-width: 425px;
+            }
+
+            @media screen and (max-width:460px) {
+                max-width: 335px;
             }
 
             .inner-container {
@@ -1120,14 +1258,14 @@ body {
                     .right-top {
                         align-items: flex-start;
                         justify-content: space-between;
-                        padding-left: 40px;
                         padding-bottom: 35px;
+                        padding-left: 41px;
                         border-bottom: 1px solid var(--third-color-smoky-grey);
                         align-items: normal;
 
                         @media screen and (max-width:1279px) {
-                            padding-left: 30px;
-                            padding-bottom: $padding-left;
+                            padding-bottom: 30px;
+                            padding-left: 31px;
                         }
 
                         @media screen and (max-width:1023px) {
@@ -1140,8 +1278,6 @@ body {
                         }
 
                         @media screen and (max-width:500px) {
-                            padding-left: 37px;
-                            padding-right: $padding-left;
                             padding-bottom: 0;
                             flex-flow: column;
                             justify-content: center;
@@ -1242,8 +1378,12 @@ body {
 
         .right-bottom {
             justify-content: space-between;
-            padding-left: 40px;
             padding-top: 26.5px;
+            padding-left: 41px;
+
+            @media screen and (max-width:1279px) {
+                padding-left: 31px;
+            }
 
             @media screen and (max-width:1023px) {
                 flex-flow: column;
@@ -1251,7 +1391,6 @@ body {
 
             @media screen and (max-width:500px) {
                 padding-top: 33px;
-                padding-left: 0;
             }
 
             .social-icons {
@@ -1283,4 +1422,20 @@ body {
             }
         }
     }
+}
+
+.add-fav {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.downarrow {
+    transform: rotate(180deg);
+}
+
+.close-icon {
+    transform: rotate(45deg);
 }
